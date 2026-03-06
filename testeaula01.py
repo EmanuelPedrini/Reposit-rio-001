@@ -1,0 +1,8 @@
+TdeVic = int(input("Insira seu Número de Vitórias"))
+TdeLos = int(input("Insira seu Número de Derrotas"))
+Tg = int((TdeVic) + (TdeLos))
+VicPercent = (TdeVic * 100 / Tg)
+Tg = str(Tg)
+VicPercent = str(VicPercent)
+print("Você jogou " + Tg + " Partidas")
+print("Ganhando " +)

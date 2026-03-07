@@ -1,0 +1,37 @@
+#Input
+n1 = float(input("Insira um Número "))
+n2 = float(input("Insira um Número "))
+s1 = (input("Insira a operação desejada "))
+p1 = (input("n1 por n2, ou n2 por n1 "))
+
+#soma
+if p1=="n1n2" and s1=="+":
+    ressoma1=(n1+n2)
+    print(ressoma1)
+elif p1 == "n2n1" and s1=="+":
+    ressoma2=(n2+n1)
+    print(ressoma2)
+
+#subtração
+if p1=="n1n2" and s1=="-":
+    ressub1=(n1-n2)
+    print(ressub1)
+elif p1 == "n2n1" and s1=="-":
+    ressub2=(n2-n1)
+    print(ressub2)
+
+#divisão
+if p1=="n1n2" and s1=="/":
+    resdiv1=(n1/n2)
+    print(resdiv1)
+elif p1 == "n2n1" and s1=="/":
+    resdiv2=(n2/n1)
+    print(resdiv2)
+
+#multiplicação
+if p1=="n1n2" and s1=="*":
+    resmult1=(n1/n2)
+    print(resmult1)
+elif p1 == "n2n1" and s1=="*":
+    resmult2=(n2/n1)
+    print(resmult2)

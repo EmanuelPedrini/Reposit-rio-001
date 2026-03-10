@@ -1,0 +1,24 @@
+horas = int(input("Quantas horas?  "))
+pesespecial = str(input("Possui deficiência, idoso ou outro? (responda com sim ou nao)  "))
+horasmenos1 = int(horas - 1)
+horasmenos3 = int(horas - 3)
+desconto = 0.85
+
+
+if horas <= 0:
+    print("mentiroso, 0 horas?")
+elif horas<=1:
+    print("grátis")
+elif horas>1 and horas<=3:
+    precofinal = float(10 + (horasmenos1*5))
+    if pesespecial == "sim":
+        precofinal = (precofinal * desconto)
+elif horas>3:
+    precofinal = (20 + (horasmenos3*8))
+    if pesespecial == "sim":
+        precofinal = (precofinal * desconto)
+
+if precofinal > 50:
+    print(f"ficou {precofinal} e ganhou uma lavagem grátis")
+else:
+    print(precofinal)

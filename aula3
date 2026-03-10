@@ -1,0 +1,10 @@
+
+#input
+num = float(input("Digite um número  "))
+#descoberta
+numdiv3 = (num%3)
+numdiv5 = (num%5)
+if numdiv3 == 0 and numdiv5 == 0:
+    print("Divisível")
+else:
+    print("Não Divisível")

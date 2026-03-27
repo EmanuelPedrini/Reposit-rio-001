@@ -42,4 +42,7 @@ for i in list(range(len(cidade))):
 for i in list(range(len(cidade))):
     for n in range(len(cidade[i])):
         if (cidade[i][n]) == 3:
-            for
+            for j in range(len(cidade[i])):
+                if (cidade[i][j]) == 2:
+                    print(f"Hospital em ({i},{n}): ABASTECIDO")
+                    continue
